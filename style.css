@@ -1,0 +1,351 @@
+@keyframes intro {
+    from {opacity : 0;
+    visibility: hidden;}
+    to {opacity:1;
+    visibility: visible;}
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0px;
+    background-color: rgb(40, 40, 40);
+}
+
+/* style Code for Navigation Bar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: rgba(27, 27, 27, 0.9);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    box-shadow: 1px 1px 1000px 40px; 
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+
+}
+
+.nav_links li > a{
+    text-decoration: none;
+    color: rgb(163, 163, 163);
+    font-family: monospace;
+    font-size: 1.5vh;
+    padding:1vw;
+    border-radius: 8px;
+    transition: all 1s ease 0s;
+}
+ 
+
+.nav_links li>a:hover{
+    background-color: rgb(136, 136, 136);
+    color: rgb(0, 0, 0)
+}
+
+
+.logo
+{
+    padding: 10px 30px;
+    height: 70px;
+}
+
+/* Style for Introduction page */
+
+#intro
+{
+    background-image: url(LS/dark-theme.png);
+    height: 100vh;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(121, 121, 121);
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+
+#intro>img{
+    height: 60vh;
+    margin: 3vh;
+    animation-name: intro;
+    animation-duration: 10s;
+}
+
+#intro>h1{
+    margin:0px 4vw;
+    padding-top: 0px;
+    font-family: rockwell;
+    font-size: 3vw;
+    color: rgb(235, 235, 235);
+    animation-name: intro;
+    animation-duration: 10s;
+
+}
+
+main{
+    background-color:rgb(40, 40, 40);
+}
+main
+
+
+/* Project Section */
+
+
+.title{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34);
+    color: rgb(227, 227, 227);
+    margin:4vh 85vw 8vh 3vw;
+    padding-top: 1vh;
+    border-bottom-width: 0.8vh;
+    border-bottom-style:groove;
+    border-radius: 5vw;
+    text-transform: uppercase;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 900;
+    box-shadow: 0px 0px 20px 1px;
+}
+
+#projects-list{
+    margin: 0px;
+    padding:0px;
+    display:flex;
+    list-style-type:none;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+#projects-list li{
+    text-decoration: none;
+    width: 33.3333333%;
+    padding:50vh 0px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(24, 24, 24);
+    transition: all 1s ease-out 0s;
+
+}
+
+#projects-list li a{
+    text-decoration: none;
+    transition: all 1s ease-out 0s;
+
+}
+#projects-list li a:hover{
+    text-decoration: none;
+    text-shadow: 10px 10px 30px;
+    color: rgb(169, 169, 169);
+    box-shadow: 0px 0px 20px 5px;
+}
+
+#projects-list li:hover{
+    box-shadow: inset 1px 1px 90px 70px; 
+}
+
+#project1{
+    background-image: url(LS/roofdeck.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+
+}
+#project2{
+    background-image: url(LS/townhouse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#project3{
+    background-image: url(LS/minimalist.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/* #projects-list li img{
+    width: 500px;
+    height:500px;
+} */
+
+#projects h3
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(184, 184, 184);
+    font-size: 2vw;
+    letter-spacing: 0.15vw;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding: 30px 50px;
+    margin: 30px 10px;
+}
+
+/* Information Section */
+
+#infoSection
+{
+    padding:0;
+}
+
+#infoSection p
+{
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+
+#aboutUs{
+
+    font-size: 15vh;
+    width: 10vw;
+    height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: rgb(93, 92, 92);
+    margin: 100px 400px 50px 100px;
+}
+
+#aboutUsdescription
+{
+    color: rgb(93, 92, 92);
+    font-family:  Courier, monospace;
+    font-size: 4vh;
+    width: 50vw;
+    margin-top: 90px;
+    padding-left: 150px;
+}
+
+/* Contact Section Css Code */
+#contact
+{
+    text-align: center;
+}
+
+#contact h1{
+    text-align: center;
+    margin: 200px 500px;
+    color: rgb(143, 143, 144);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(143, 143, 144);
+    font-size: 3vw;
+}
+
+#contact h2{
+    font-size: 3vw;
+}
+#contact h3{
+    font-size: 2vw;
+}
+
+#contact p{
+    display: inline-block;
+    font-size: 2vw;
+    width: 50%;
+}
+
+#contact img{
+    border-radius: 50%;
+    height : 25vh;
+    width:15vw
+}
+
+#contact a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+#workers{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.worker
+{
+    width: 35%;
+    background-color: rgb(143, 143, 144);
+    padding: 40px 0px;
+    border-radius: 20px;
+}
+
+
+/* Footer css style */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0%;
+    background-color: rgba(27, 27, 27, 0.9);
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1000px 40px; 
+}
+
+#smallMenu li a{
+    text-decoration: none;
+    color: rgb(123, 123, 123);
+    font-size: 2vh;
+    line-height: 30px;
+}
+#smallMenu li a:hover{
+    text-decoration:underline;
+ 
+}
+
+
+form{
+    color:rgb(192, 192, 192);
+    padding: 10px;
+    margin: 10px 40px;
+}
+
+#name{
+    background-color:rgb(219, 219, 219);
+    border-radius: 3px;
+    border-width: 0px;
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+#email
+{
+    background-color:rgb(219, 219, 219);
+    border-radius: 3px;
+    border-width: 0px;
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+#submit{
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: rgb(212, 212, 212);
+}
+
+#logofooter
+{
+    padding: 10px 30px;
+    height: 170px;
+}
